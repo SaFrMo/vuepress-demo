@@ -1,8 +1,8 @@
 <script>
 WebFontConfig = {
-//         google: {
-//             families: []
-//         },
+        google: {
+            families: ['Barlow Semi Condensed']
+        }
 //         typekit: {
 //             id: ''
 //         },

@@ -16,6 +16,11 @@
             // '/path/*/:var'                       => 'WildcardAndVar'
             // path_from_dev_id('dev-id')  		=> 'DefinedByDevId',
 		    // path_from_dev_id('dev-id', '/append-me') => 'DevIdPathPlusAppendedString'
+			path_from_dev_id('fh-components')		=> 'WorkGrid',
+			path_from_dev_id('fh-components', '/:component')	=> 'WorkDetail',
+			path_from_dev_id('animations')			=> 'WorkGrid',
+			path_from_dev_id('animations', '/:animation')	=> 'WorkDetail',
+			path_from_dev_id('about')				=> 'About',
 
             // Probably unchanging
             ''                                      => 'FrontPage',

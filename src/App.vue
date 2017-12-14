@@ -67,7 +67,6 @@
     @import 'src/styles/base';
 
     .container {
-        min-height: 100vh;
         margin: 0;
     }
 

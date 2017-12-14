@@ -7,4 +7,35 @@ body {
     text-rendering: optimizeLegibility !important;
 
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: $black;
+    position: relative;
+    padding: 5px 10px;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: #eee;
+        top: 55%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform 0.4s;
+        z-index: -1;
+    }
+    &:hover, &:focus {
+        &::after {
+            transform: scale(1);
+        }
+    }
+}
+*:focus {
+    outline: none;
 }
